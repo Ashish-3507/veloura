@@ -23,6 +23,7 @@ const userSchema = mongoose.Schema({
     phone_no:{
         type:Number,
         maxlength:"10",
+        minlength:"10",
     },
     role:{
         type:String,
@@ -34,6 +35,8 @@ const userSchema = mongoose.Schema({
 {
     timeStamp:true,
 })
+
+
 
 const User = mongoose.model("User", userSchema);
 
